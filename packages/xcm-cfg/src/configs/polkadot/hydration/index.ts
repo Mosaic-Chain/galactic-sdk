@@ -30,6 +30,7 @@ import {
   ldo,
   ldot,
   link,
+  mos,
   myth,
   neuro,
   nodl,
@@ -83,6 +84,7 @@ import {
   kilt_chain,
   laos_chain,
   moonbeam,
+  mosaic,
   mythos,
   neuroweb,
   nodle,
@@ -325,6 +327,8 @@ const toZeitgeist: AssetRoute[] = [
 
 const toPhala: AssetRoute[] = [toTransferTemplate(pha, phala, 0.064296)];
 
+const toMosaic: AssetRoute[] = [toTransferTemplate(mos, mosaic, 0.1 /* TODO: what should this be? */)];
+
 const toMythos: AssetRoute[] = [toTransferTemplate(myth, mythos, 2.5)];
 
 const toNodle: AssetRoute[] = [toTransferTemplate(nodl, nodle, 0.0012)];
@@ -429,6 +433,7 @@ export const hydrationConfig = new ChainRoutes({
     ...toLaos,
     ...toEnergywebx,
     ...toMoonbeam,
+    ...toMosaic,
     ...toMythos,
     ...toNeuroweb,
     ...toNodle,

@@ -35,6 +35,7 @@ import {
   ldo,
   ldot,
   link,
+  mos,
   myth,
   paxg,
   pen,
@@ -723,6 +724,19 @@ export const hydration = new EvmParachain({
               },
             },
           ],
+        },
+      },
+    },
+    {
+      asset: mos,
+      decimals: 18,
+      id: 3377,
+      xcmLocation: {
+        parents: 1,
+        interior: {
+          X1: {
+            Parachain: 3377,
+          },
         },
       },
     },

@@ -8,6 +8,7 @@ import { centrifugeConfig } from './centrifuge';
 import { hydrationConfig } from './hydration';
 import { interlayConfig } from './interlay';
 import { moonbeamConfig } from './moonbeam';
+import { mosaicConfig } from './mosaic';
 import { mythosConfig } from './mythos';
 import { nodleConfig } from './nodle';
 import { uniqueConfig } from './unique';
@@ -33,6 +34,7 @@ export const polkadotChainsConfig: ChainRoutes[] = [
   hydrationConfig,
   interlayConfig,
   moonbeamConfig,
+  mosaicConfig,
   mythosConfig,
   neurowebConfig,
   nodleConfig,

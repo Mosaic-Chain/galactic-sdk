@@ -160,6 +160,11 @@ export const link = new Asset({
   originSymbol: 'LINK',
 });
 
+export const mos = new Asset({
+  key: 'mos',
+  originSymbol: 'MOS',
+});
+
 export const myth = new Asset({
   key: 'myth',
   originSymbol: 'MYTH',
@@ -393,6 +398,7 @@ export const assets: Asset[] = [
   lbtc,
   ldot,
   link,
+  mos,
   myth,
   neuro,
   nodl,
