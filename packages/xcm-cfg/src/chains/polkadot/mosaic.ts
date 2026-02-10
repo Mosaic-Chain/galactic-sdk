@@ -31,5 +31,6 @@ export const mosaic = new Parachain({
   name: 'Mosaic Chain',
   parachainId: 3377,
   ss58Format: 0,
-  ws: endpoints,
+  // ws: endpoints,
+  ws: 'ws://localhost:8000',
 });

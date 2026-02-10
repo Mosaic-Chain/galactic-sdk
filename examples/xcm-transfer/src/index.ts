@@ -15,9 +15,9 @@ import { configService, wallet, whTransfers } from './setup';
 import { sign, signSubstrate, signSolanaBundle } from './signers';
 
 // Define transfer constraints
-const srcChain = configService.getChain('base');
+const srcChain = configService.getChain('mosaic');
 const destChain = configService.getChain('hydration');
-const asset = configService.getAsset('eurc');
+const asset = configService.getAsset('mos');
 
 const configBuilder = ConfigBuilder(configService);
 const { sourceChains } = configBuilder.assets().asset(asset);
@@ -32,8 +32,8 @@ logDestChains(asset.key, destinationChains);
 logSrcChains(asset.key, sourceChains);
 
 // Define source & dest accounts
-const srcAddr = 'INSERT_ADDRESS';
-const destAddr = 'INSERT_ADDRESS';
+const srcAddr = '15oF4uVJwmo4TdGW7VfQxNLavjCXviqxT9S1MgbjMNHr6Sp5'; // Alice
+const destAddr = '14VisMatL3LBSR32tJxjTAeQJkQn2Ux6tdTGaab9ojgHEJ4D'; // VisMat
 
 // Subscribe source chain token balance
 const balanceObserver = (balances: AssetAmount[]) => console.log(balances);

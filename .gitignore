@@ -32,3 +32,4 @@ integration-tests/*/output.json
 
 # Env
 .env
+.direnv

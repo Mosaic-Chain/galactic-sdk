@@ -169,8 +169,9 @@ const config = {
   treasury: '14xmwinmCEz6oRrFdczHKqHgWNMiCysE2KrA4jXXAAM1Eogk',
   usesDeliveryFee: true,
   ws: [
-    'wss://polkadot-asset-hub-rpc.polkadot.io',
-    'wss://asset-hub-polkadot-rpc.n.dwellir.com',
+    'ws://localhost:8001',
+    // 'wss://polkadot-asset-hub-rpc.polkadot.io',
+    // 'wss://asset-hub-polkadot-rpc.n.dwellir.com',
   ],
 } as Omit<ParachainParams, 'key'>;
 
